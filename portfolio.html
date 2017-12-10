@@ -2,104 +2,389 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-
+    <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.css"/>
-
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a href="" class="navbar-brand"><img src="images/IMG_4773-3 - Copy.jpg"/> </a>
+        <!--<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">-->
+        <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <div class="collapse navbar-collapse" id="myMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a> </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a> </li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a> </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a> </li>
+            </ul>
 
-<div class="container">
-    <!--<div class="container-fluid">-->
-    <div class="row">
-        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6" style="height: 200px; border: 1px solid; " >
-            <img src="images/IMG_4773-3.jpg" class="img-thumbnail" height="200" width="200" alt=""/>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#signIn">Sing In</a> </li>
+                <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#signUp">Sign Up</a> </li>
+            </ul>
+
+
+
+
         </div>
-        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-6 " style="height: 200px; border: 1px solid; " align="middle" >
-            <h3 align="middle">Portfolio create by using Bootstrap CSS</h3>
+    </div>
+</nav>
+
+<br/>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>About myself:</b></h5>
+                    <p>
+                        <b>Shetu Chowdhury</b>
+                        Address       : House 09, Road 04, Nikunjo 02, Khilkhet.
+                        Contact Number: +8801672268919
+                        Email         : shetuchowdhury@hotmail.com, shetu09chowdhury@gmail.com
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Career Objective: </b></h5>
+                    <p>Looking for a challenging & growth oriented position for professional experience and willing to work in an environment where an opportunity of self-assessment and self-improvement in both individual and team based work that will help for further improvement.</p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Academic Qualifications: </b></h5>
+                    <p>
+                        1. BSc in Computer Science & Engineering: Southeast University; Result: 3.40; Passing year: 2015
+                        2. Higher School Certificate [Science]: Sherpur Govt. College; Result: 4.20; Passing year: 2010
+                        3. Secondary school certificate [Science]: Bazitkhila high school; Result: 4.75; Passing year: 2008
+
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="signIn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3> Sign in here</h3>
+                <button class="close" data-dismiss="modal">
+                    &Cross;
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">User name</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="user_name" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4"></label>
+                        <div class="col-sm-12">
+                            <input type="submit" name="btn" class="btn btn-success btn-block"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-sm-6" align="left">
+                    <input type="checkbox"> Remember Me
+                </div>
+                <div class="col-sm-6" align="right">
+                    <a href=":">Forgot password?</a>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="height: 50px; border: 1px solid; " align="middle">
-            <a href="home.html">Home</a> ||
-            <a href="about.html">About</a> ||
-            <a href="portfolio.html">Portfolio</a> ||
-            <a href="gallery.html">Gallery</a> ||
-            <a href="contact.html">Contact</a>
+
+<div class="modal fade" id="signUp">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create an account</h3>
+                <button class="close" data-dismiss="modal">
+                    &Cross;
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">User name</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="user_name" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Email Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="email_address" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Confirm Password</label>
+                        <div class="col-sm-8">
+                            <input type="confirm_password" name="confirm_password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4"></label>
+                        <div class="col-sm-12">
+                            <input type="submit" name="btn" class="btn btn-success btn-block"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>
 
-<div class="container" >
-    <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="height: 600px; border: 1px solid; " >
-            <h3>Shetu Chowdhury</h3>
-            <pre align = "left">
-                Address       : House 09, Road 04, Nikunjo 02, Khilkhet.
-                Contact Number: +8801672268919
-                Email         : shetuchowdhury@hotmail.com, shetu09chowdhury@gmail.com
-                <b>Career Objective: </b>
-                Looking for a challenging & growth oriented position for professional experience and willing to work in an environment
-                where an opportunity of self-assessment and self-improvement in both individual and team based work that will help for
-                further improvement.
-                <b>Academic Qualifications: </b>
-                   1. BSc in Computer Science & Engineering: Southeast University; Result: 3.40; Passing year: 2015
-                   2. Higher School Certificate [Science]: Sherpur Govt. College; Result: 4.20; Passing year: 2010
-                   3. Secondary school certificate [Science]: Bazitkhila high school; Result: 4.75; Passing year: 2008
-                <b>Research:</b> Virtual Speech and Language Therapy for Autistic Child.
-                <b>Project:</b>
-                   1. Multi-Level Tic Tac Toe Game for Android Platform.
-                   2. Strategic evaluation of a local company-Shah Cement.
-                <b>Technical Skills:</b>
-                Languages: Java, Flex, Bison, HTML, CSS, PHP.
-                Operating System: Windows 7, Linux.
-                Computer skill: MS office.
-                Extracurricular Activity: part time Web developer & Graphic designer.
-                Interest: Web browsing, Mailing, Watching Movies, cooking etc.
-                <b>Achievements:</b>
-                   a. Many achievement in inter school indoor & outdoor games.
-                   b. 3rd Prize in inter school essay writing competition.
-                <b>Other Activities:</b>
-                   a.Organized reunion party in school.
-                   b.Worked as a volunteer in School, College & University.
-                <b>Working Experience:</b>
-                    <b>Adiva Graphics (Post Charting Associate since 6th September 2015 to 10th November 2017)</b>
-                <b>Job Responsibilities:</b>
-                   1. Charting with Heavy data sheet in MS excel and MS PowerPoint.
-                   2. Statistical analysis of data or survey.
-                   3. Document and data conversion.
-                   4. Survey Quality Checking.
-                   5. Data tab assurance.
-                   6. De-branding (Audio, Video, Image) and Ad transcripts.
-                <b>References:</b>
-                1. Monirul Hasan
-                Lceturer & Coordinator, Department of Computer Science & Engineering.
-                Southeast University.
-                Email: kmhasan@gmail.com
-                Contact Number: +8801811936618
-                2. Md. Kamrul Hasan Chowdhury
-                Lecturer, Department of Mathematics.
-                Chittagong University of Engineering & Technology (CUET).
-                Email: hhimadrii@gmail.com
-                Contact Number: +8801816029599
+<section class="add-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
 
-               </pre>
-        </div>
+                <div class="carousel slide" data-ride="carousel" data-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-item-padding">
+                            <h1 align="middle">Shetu Chowdhury</h1>
+                            <h3 align="center">Looking for a challenging environment for work.</h3>
+                        </div>
 
-    </div>
-</div>
+                        <div class="carousel-item carousel-item-padding">
+                            <h1 align="middle">Academic Qualifications:</h1>
+                            <h3 align="center">Completed BSc engeneering in computer science from Southeast University. </h3>
+                        </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="height: 50px; border: 1px solid; " >
-            <p align="center">Created by Shetu Chowdhury</p>
+                        <div class="carousel-item carousel-item-padding">
+                            <h1 align="middle">Research:</h1>
+                            <h3 align="center">Virtual Speech and Language Therapy for Autistic Child.</h3>
+                        </div>
+
+                        <div class="carousel-item carousel-item-padding">
+                            <h1 align="middle">Project:</h1>
+                            <h3 align="center">Multi-Level Tic Tac Toe Game for Android Platform and Strategic evaluation of a local company-Shah Cement.
+                            </h3>
+                        </div>
+
+                        <div class="carousel-item carousel-item-padding">
+                            <h1 align="middle">Achievements:</h1>
+                           <h3 align="center">
+                               Many achievement in inter school indoor & outdoor games and 3rd Prize in inter school essay writing competition.
+                           </h3>
+                        </div>
+
+                        <div class="carousel-item carousel-item-padding">
+                            <h1 align="middle">References:</h1>
+                            <h3 align="center">Monirul Hasan and Md. Kamrul Hasan Chowdhury</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</section>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Research:</b></h5>
+                    <p>Virtual Speech and Language Therapy for Autistic Child.</p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Project:</b></h5>
+                    <p>
+                        1. Multi-Level Tic Tac Toe Game for Android Platform.
+                        2. Strategic evaluation of a local company-Shah Cement.
+
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Technical Skills:</b></h5>
+                    <p>Languages: Java, Flex, Bison, HTML, CSS, PHP.
+                        Operating System: Windows 7, Linux.
+                        Computer skill: MS office.
+                        Extracurricular Activity: part time Web developer & Graphic designer.
+                        Interest: Web browsing, Mailing, Watching Movies, cooking etc.
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Achievements:</b></h5>
+                    <p>a. Many achievement in inter school indoor & outdoor games.
+                        b. 3rd Prize in inter school essay writing competition.
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Other Activities:</b></h5>
+                    <p>
+                        a.Organized reunion party in school.
+                        b.Worked as a volunteer in School, College & University.
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Working Experience:</b></h5>
+                    <p><b>Adiva Graphics </b>(Post Charting Associate since 6th September 2015 to 10th November 2017).
+                        Job Responsibilities:
+                        1. Charting with Heavy data sheet in MS excel and MS PowerPoint.
+                        2. Statistical analysis of data or survey.
+                        3. Document and data conversion.
+                        4. Survey Quality Checking.
+                        5. Data tab assurance.
+                        6. De-branding (Audio, Video, Image) and Ad transcripts.
+
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>References:</b></h5>
+                    <p>
+                        1. Monirul Hasan
+                        Lceturer & Coordinator, Department of Computer Science & Engineering.
+                        Southeast University.
+                        Email: kmhasan@gmail.com
+                        Contact Number: +8801811936618
+
+                        2. Md. Kamrul Hasan Chowdhury
+                        Lecturer, Department of Mathematics.
+                        Chittagong University of Engineering & Technology (CUET).
+                        Email: hhimadrii@gmail.com
+                        Contact Number: +8801816029599
+
+                    </p>
+                    <a href="" class="btn btn-success">Read More.....</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
+
+
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>-->
 
 <script src="js/bootstrap.js"></script>
 </body>

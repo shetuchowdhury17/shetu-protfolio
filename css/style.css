@@ -1,26 +1,59 @@
 .div{
-    height: 1200px;
-    width: 1200px;
+    height: 700px;
+    width: 700px;
     background-color: #b99ccf;
 }
 
 @media screen and (max-width: 1200px) {
     body{
-        background-color: red;
+        background-color: #ffffff;;
     }
 
 }
 
 @media screen and (min-width: 550px) and (max-width: 650px) {
     body{
-        background-color: green;
+        background-color: #ffffff;;
     }
 
 }
 
 @media screen and (min-width: 1000px) {
     body{
-        background-color: blue;
+        background-color:#ffffff;
     }
 
 }
+
+.carousel-item-padding{
+    padding: 50px 250px;
+}
+.add-section{
+    background: url("../images/2.jpg");
+    /*background-color: #0b2e13;*/
+    color: white;
+    background-attachment: fixed;
+    /*background-size: cover;*/
+    background-size: 100% 100%;
+
+}
+/*.objective {*/
+    /*background-color:#ffffff;*/
+    /*margin: auto;*/
+/*}*/
+/*.read-more{*/
+
+    /*padding: 5px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+/*.read-more-link {*/
+    /*text-decoration: none;*/
+    /*font-weight: bolder;*/
+    /*font-color: white;*/
+/*}*/
+
+/*.read-less-link {*/
+    /*text-decoration: none;*/
+    /*font-weight: bolder;*/
+    /*font-color: white;*/
+/*}*/

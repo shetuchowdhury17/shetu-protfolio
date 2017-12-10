@@ -3,90 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-
     <link rel="stylesheet" href="css/bootstrap.css"/>
-
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a href="" class="navbar-brand"><img src="images/IMG_4773-3 - Copy.jpg"/> </a>
+        <!--<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">-->
+        <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <div class="collapse navbar-collapse" id="myMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a> </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a> </li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a> </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a> </li>
+            </ul>
 
-<div class="container">
-    <!--<div class="container-fluid">-->
-    <div class="row">
-        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6" style="height: 200px; border: 1px solid; " >
-            <img src="images/IMG_4773-3.jpg" class="img-thumbnail" height="200" width="200" alt=""/>
-        </div>
-        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-6 " style="height: 200px; border: 1px solid; " align="middle" >
-            <h3 align="middle">Portfolio create by using Bootstrap CSS</h3>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#signIn">Sing In</a> </li>
+                <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#signUp">Sign Up</a> </li>
+            </ul>
+
+
+
+
         </div>
     </div>
-</div>
+</nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="height: 50px; border: 1px solid; " align="middle">
-            <a href="index.html">Home</a> ||
-            <a href="about.html">About</a> ||
-            <a href="portfolio.html">Portfolio</a> ||
-            <a href="gallery.html">Gallery</a> ||
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <!--<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4" style="height: 600px; border: 1px solid; " ></div>-->
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="height: 600px; border: 1px solid; " >
-            <pre>
-            <b>Contact with me:</b>
-
-            Name      : Shetu Chowdhury
-            Contact no: 01672262919
-            Email     : shetuchowdhury17@gamil.com
-            </pre>
-
-            <div class="col-sm-8">
-                <hr/>
-                <div class="form-group row">
-                <label class="col-form-label col-sm-3">First name</label>
-                <div class="col-sm-9">
-                <input type="text" name="first_name" class="form-control">
-                </div>
-                </div>
-
-                <div class="form-group row">
-                <label class="col-form-label col-sm-3">Last name</label>
-                <div class="col-sm-9">
-                <input type="text" name="last_name" class="form-control">
-                </div>
-                </div>
-
-                <div class="form-group row">
-                <label class="col-form-label col-sm-3">Email Address</label>
-                <div class="col-sm-9">
-                <input type="email" name="email_address" class="form-control">
-                </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-form-label col-sm-3"></label>
-                    <div class="col-sm-9">
-                    <input type="submit" name="btn" class="btn btn-success btn-block"/>
-                    </div>
+<div class="modal fade" id="signIn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3> Sign in here</h3>
+                <button class="close" data-dismiss="modal">
+                    &Cross;
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">User name</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="user_name" class="form-control">
+                        </div>
                     </div>
 
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4"></label>
+                        <div class="col-sm-12">
+                            <input type="submit" name="btn" class="btn btn-success btn-block"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-sm-6" align="left">
+                    <input type="checkbox"> Remember Me
+                </div>
+                <div class="col-sm-6" align="right">
+                    <a href=":">Forgot password?</a>
+                </div>
+            </div>
 
         </div>
     </div>
 </div>
-
+<br/>
 <div class="container">
     <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="height: 50px; border: 1px solid; " >
-            <p align="center">Created by Shetu Chowdhury</p>
+        <div class="col-sm-12">
+            <table class="table table-bordered table-hover table-responsive">
+                <thead class="table-info">
+                <tr class="table-info">
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Shetu Chowdhry</td>
+                    <td class="text-primary">shetuchowdhry17@gmail.com</td>
+                    <td>01672268920</td>
+                    <td>Road 04, House 9, Nikunjo 2, Khilkhet.</td>
+                    <td>Dhaka</td>
+                    <td>Bangladesh</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="signUp">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create an account</h3>
+                <button class="close" data-dismiss="modal">
+                    &Cross;
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">User name</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="user_name" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Email Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="email_address" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Confirm Password</label>
+                        <div class="col-sm-8">
+                            <input type="confirm_password" name="confirm_password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-4"></label>
+                        <div class="col-sm-12">
+                            <input type="submit" name="btn" class="btn btn-success btn-block"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-</div>
+
+<section class="add-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="carousel slide" data-ride="carousel" data-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-item-padding">
+                            <h1 align="middle">Name </h1>
+                            <h3 align="middle">Shetu Chowdhury </h3>
+                        </div>
+
+                        <div class="carousel-item carousel-item-padding">
+                            <h1 align="middle">Contact Number</h1>
+                            <h3 align="middle">+8801672268919</h3>
+                        </div>
+
+                        <div class="carousel-item carousel-item-padding">
+                            <h1 align="middle">Email Address</h1>
+                            <h3 align="middle">shetuchowdhury17@gmail.com</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>-->
 
 <script src="js/bootstrap.js"></script>
 </body>
